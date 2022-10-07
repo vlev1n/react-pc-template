@@ -1,0 +1,118 @@
+// @import '~antd/dist/antd.less';
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+}
+.router {
+  height: 100%;
+}
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+  border-right: 0 !important;
+}
+
+.ant-progress,
+.ant-progress-outer {
+  line-height: 0 !important;
+}
+
+.ant-btn {
+  box-shadow: none !important;
+  span {
+    text-shadow: none;
+  }
+}
+
+// 分页未选中样式修改
+.ant-pagination-item {
+  background: #fff !important;
+}
+// 分页选中样式修改
+.ant-pagination-item-active {
+  background: #3d7fff !important;
+  a {
+    color: #fff !important;
+  }
+}
+// 下拉框/蓝色下拉框样式修改
+.Dropdown_blue {
+  .ant-dropdown-trigger,
+  .c_blue_border {
+    border: #3d7fff 1px solid !important;
+    span {
+      color: #3d7fff !important;
+    }
+  }
+  .ant-dropdown-trigger:hover,
+  .c_blue_border:hover {
+    border: rgba(61, 127, 255, 0.7) 1px solid !important;
+  }
+  .ant-dropdown-trigger:active,
+  .c_blue_border:active {
+    border: rgb(41, 94, 217) 1px solid !important;
+  }
+}
+
+.ant-progress-bg {
+  height: 3px !important;
+}
+
+.page-animation {
+  animation: fadeIn;
+  animation-duration: 500ms;
+}
+
+.disabled {
+  opacity: 0.6 !important;
+  transition: all 500ms ease-in;
+  color: rgba(0, 0, 0, 1) !important;
+}
+// 表格样式修改
+.ant-table-content {
+  .ant-table-thead {
+    background: #fafafa;
+  }
+}
+
+.ant-table-pagination-right {
+  justify-content: center;
+}
+
+// .ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td{
+//   padding: 13px 16px !important;
+// }
+
+// 树形组件选中状态样式
+.ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  background: none;
+  color: #3d7fff;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(153, 153, 153);
+}
+/*定义滚动条轨道*/
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  background-color: rgb(218, 218, 218);
+  /* background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent); */
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}

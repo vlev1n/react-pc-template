@@ -1,0 +1,82 @@
+ul.ant-table-pagination {
+  & > li {
+    &.ant-pagination-item-active {
+      background: #3d7fff;
+      border: none;
+      & > a {
+        color: white;
+      }
+    }
+  }
+}
+.table-a {
+  color: #333;
+  font-weight: bold;
+  & > td.ant-table-cell {
+    /* padding: calc(10 / 16 * 1rem); */
+    padding: 0;
+    height: calc(52 / 16 * 1rem);
+    font-weight: bold;
+  }
+  & .ant-btn.ant-btn-link > span {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  & .ant-btn.ant-btn-link {
+    padding: 0;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+/* .table-a.area > td.ant-table-cell {
+  height: calc(87.5 / 16 * 1rem);
+} */
+/* 页码箭头不居中 */
+.ant-pagination-item-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.structure {
+  height: 100%;
+  & .ant-tabs-content-holder {
+    flex: 1;
+  }
+}
+/* 加载居中 */
+.ant-spin-nested-loading.spin-a {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  & > .ant-spin-container {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+  }
+  & > div > .ant-spin {
+    max-height: 100vh;
+  }
+}
+.ant-table-thead > tr > th.ant-table-cell {
+  padding: 0.25rem 1rem;
+  font-weight: bold;
+  color: #666;
+}
+.ant-table {
+  font-size: calc(14 / 16 * 1rem);
+}
+/* vlevin @ 2021-01-05 Chrome */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #e6e6e6c0;
+}
+*::-webkit-scrollbar-track {
+  background: #eeeeee80;
+}
+/* vlevin @ 2021-01-05 FF */
+* {
+  scrollbar-width: thin;
+}
